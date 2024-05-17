@@ -1,0 +1,8 @@
+let z = 4153000000000000 + 1;
+console.log(z);
+const x = Number.MAX_SAFE_INTEGER + 1;
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(x);
+4153000000000000000;
+4153000000000000000;
+9007199254740992;
