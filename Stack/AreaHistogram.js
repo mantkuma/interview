@@ -2,6 +2,7 @@ function NearestSmallestRightIndex(arr) {
   let stack = [];
   let res = [];
   for (let i = arr.length - 1; i >= 0; i--) {
+    
     if (stack.length === 0) {
       res.push(arr.length);
     } else if (stack.length > 0 && stack[stack.length - 1].height < arr[i]) {

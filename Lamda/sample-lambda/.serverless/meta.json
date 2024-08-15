@@ -1,0 +1,122 @@
+{
+  "/Users/mantosh/Documents/Code/Interview-Git/interview/Lamda": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.21",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeResolverProviders": {
+      "aws": {
+        "instance": {
+          "credentials": "<REDACTED>",
+          "serviceConfigFile": {
+            "service": "express-lambda",
+            "provider": {
+              "name": "aws",
+              "runtime": "nodejs20.x",
+              "region": "ap-south-1",
+              "stage": "dev",
+              "versionFunctions": true
+            },
+            "functions": {
+              "app": {
+                "handler": "handler.handler",
+                "events": [
+                  {
+                    "http": {
+                      "path": "/",
+                      "method": "get"
+                    }
+                  }
+                ]
+              }
+            },
+            "plugins": [
+              "test-deploy"
+            ]
+          },
+          "configFileDirPath": "/Users/mantosh/Documents/Code/Interview-Git/interview/Lamda",
+          "config": {
+            "type": "aws"
+          },
+          "options": {},
+          "stage": "dev",
+          "dashboard": null,
+          "isDefaultConfig": true
+        },
+        "resolvers": {}
+      }
+    },
+    "composeServiceName": null,
+    "servicePath": "/Users/mantosh/Documents/Code/Interview-Git/interview/Lamda",
+    "serviceConfigFileName": "serverless.yaml",
+    "service": {
+      "service": "express-lambda",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs20.x",
+        "region": "ap-south-1",
+        "stage": "dev",
+        "versionFunctions": true
+      },
+      "functions": {
+        "app": {
+          "handler": "handler.handler",
+          "events": [
+            {
+              "http": {
+                "path": "/",
+                "method": "get"
+              }
+            }
+          ]
+        }
+      },
+      "plugins": [
+        "test-deploy"
+      ]
+    },
+    "serviceRawFile": "service: express-lambda\n\nprovider:\n  name: aws\n  runtime: nodejs20.x\n  region: ap-south-1\n\nfunctions:\n  app:\n    handler: handler.handler\n    events:\n      - http:\n          path: /\n          method: get\n\nplugins:\n  - test-deploy\n",
+    "command": [
+      "deploy"
+    ],
+    "options": {},
+    "error": {
+      "message": "Serverless plugin \"test-deploy\" not found. Make sure it's installed and listed in the \"plugins\" section of your serverless config file. Use the --debug flag to learn more.",
+      "stack": "ServerlessError2: Serverless plugin \"test-deploy\" not found. Make sure it's installed and listed in the \"plugins\" section of your serverless config file. Use the --debug flag to learn more.\n    at PluginManager.resolveServicePlugins (file:///Users/mantosh/.serverless/releases/4.1.21/package/dist/sf-core.js:895:2669)\n    at async PluginManager.loadAllPlugins (file:///Users/mantosh/.serverless/releases/4.1.21/package/dist/sf-core.js:895:1293)\n    at async Serverless.init (file:///Users/mantosh/.serverless/releases/4.1.21/package/dist/sf-core.js:902:9781)\n    at async runFramework (file:///Users/mantosh/.serverless/releases/4.1.21/package/dist/sf-core.js:950:880)\n    at async route (file:///Users/mantosh/.serverless/releases/4.1.21/package/dist/sf-core.js:961:16356)\n    at async Object.run2 [as run] (file:///Users/mantosh/.serverless/releases/4.1.21/package/dist/sf-core.js:961:16754)\n    at async run3 (file:///Users/mantosh/.serverless/releases/4.1.21/package/dist/sf-core.js:961:18014)",
+      "code": "PLUGIN_NOT_FOUND"
+    },
+    "params": {},
+    "machineId": "28714f56bbd9a1fbb0fe0babd47018f0",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "5b43cda9-de8a-42e0-98da-66a6d3ec82dc",
+    "orgName": "nectron",
+    "userId": "9KrVw4hN5RHN85LvPR",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "nectron",
+    "subscription": null,
+    "userEmail": "mantosh003rnc@gmail.com",
+    "serviceProviderAwsCredentials": "<REDACTED>",
+    "serviceProviderAwsAccountId": "218183264146",
+    "versionSf": "4.1.21",
+    "serviceProviderAwsCfStackId": "arn:aws:cloudformation:ap-south-1:218183264146:stack/cip-formkiq-dev-CoreConsoleUsers-KJCV8PM2QIBE/0acb51f0-c659-11ee-9f0e-0a27667936b8",
+    "serviceProviderAwsCfStackCreated": "2024-02-08T08:07:03.147Z",
+    "serviceProviderAwsCfStackUpdated": "2024-02-13T05:10:33.999Z",
+    "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
+    "serviceProviderAwsCfStackOutputs": [
+      {
+        "OutputKey": "AdminGroupRoleArn",
+        "OutputValue": "arn:aws:iam::218183264146:role/cip-formkiq-dev-CoreConsoleUsers-KJC-AdminGroupRole-LA4uSTCbdU2g"
+      }
+    ]
+  }
+}
